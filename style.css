@@ -108,6 +108,7 @@ li
 	font-weight: light;
 	font-family: 'Abel', serif;
 	font-size: 30px;
+	color: #C5C5AC;
 	
 	padding: 5px 20px 5px 20px;
 	
@@ -115,7 +116,7 @@ li
 }
 .divider
 {
-	border-left: 1px solid black;
+	border-left: 2px solid #C5C5AC;
 	padding-left: 40px;
 	margin-left: 20px;
 }
