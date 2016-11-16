@@ -8,19 +8,20 @@ body
 {
 	display: inline-block;
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1024px;
 	padding-top: 15px;
 	
 	background-color: #5E7BA8;
 }
 header
 {
-	margin: 0px 80px 0px 80px;
+	margin: 0px 50px 0px 50px;
 }
 
 #the-title
 {
 	margin: 0;
+	padding: 30px 0px 30px 0px;
 	background-color: #276F65;
 	display: inline-block;
 	width: 100%;
@@ -29,7 +30,7 @@ header
 
 .quotation
 {
-	margin: 30px 0px 60px 0px;
+	margin: 25px 0px 60px 0px;
 }
 q
 {
@@ -54,35 +55,38 @@ p
 	font-size: 18px;
 	color: #14143B;
 	text-align: justify;
+	
+	margin: 22px 30px 22px 30px;
 }
 
 h1, h2, h3
 {
 	font-family: 'Cinzel', serif;
 	color: #C5C5AC;
+	margin: 0;
 }
 h1
 {
 	font-weight: normal;
 	font-size: 75px;
-	margin-top: 0;
-	margin-bottom: 30px;
 }
 h3
 {
 	font-weight: normal;
 	font-size: 35px;
-	margin-bottom: 0;
 }
 #problematique
 {
 	display: inline-block;
 	width: 100%;
-	padding: 20px 0px 20px 0px;
 	background-color: #224E92;
-	
+}
+#problematique p
+{
 	font-weight: normal;
 	font-family: 'Rajdhani', serif;
-	font-size: 35px;
+	font-size: 32px;
 	color: #B5B5AC;
+	
+	text-align: center;
 }
