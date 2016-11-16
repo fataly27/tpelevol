@@ -1,0 +1,71 @@
+body
+{
+	background-color: #9BACC8;
+	text-align: center;
+	margin: 0;
+}
+#container
+{
+	display: inline-block;
+	width: 100%;
+	max-width: 1024px;
+	
+	background-color: #5E7BA8;
+}
+header
+{
+	margin: 0px 80px 0px 80px;
+}
+
+#the-title
+{
+	margin: 0;
+	background-color: #276F65;
+	display: inline-block;
+	width: 100%;
+}
+
+
+.quotation
+{
+	margin: 20px 0px 50px 0px;
+}
+q
+{
+	font-family: 'Oswald', Arial, serif;
+	display: inline-block;
+	font-size: 30px;
+}
+.author
+{
+	font-family: 'Oswald', Arial, serif;
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+	margin-top: 5px;
+}
+
+p
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+h1, h2, h3
+{
+	font-family: 'Cinzel', serif;
+}
+h1
+{
+	font-weight: normal;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+h3
+{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 0;
+}
