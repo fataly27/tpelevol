@@ -8,7 +8,8 @@ body
 {
 	display: inline-block;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1100px;
+	padding-top: 15px;
 	
 	background-color: #5E7BA8;
 }
@@ -28,13 +29,14 @@ header
 
 .quotation
 {
-	margin: 20px 0px 50px 0px;
+	margin: 30px 0px 60px 0px;
 }
 q
 {
 	font-family: 'Oswald', Arial, serif;
-	display: inline-block;
+	display: block;
 	font-size: 30px;
+	margin-right: 30px;
 }
 .author
 {
@@ -50,22 +52,37 @@ p
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 500;
 	font-size: 18px;
+	color: #14143B;
+	text-align: justify;
 }
 
 h1, h2, h3
 {
 	font-family: 'Cinzel', serif;
+	color: #C5C5AC;
 }
 h1
 {
 	font-weight: normal;
-	font-size: 70px;
+	font-size: 75px;
 	margin-top: 0;
 	margin-bottom: 30px;
 }
 h3
 {
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 35px;
 	margin-bottom: 0;
+}
+#problematique
+{
+	display: inline-block;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	background-color: #224E92;
+	
+	font-weight: normal;
+	font-family: 'Rajdhani', serif;
+	font-size: 35px;
+	color: #B5B5AC;
 }
