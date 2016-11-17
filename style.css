@@ -1,6 +1,11 @@
 body
 {
-	background-color: #9BACC8;
+	background-size: 100% auto;
+	background-attachment: fixed;
+    background-position: center;
+	background-color: rgba(155, 172, 200, 0.7);
+	background-image: url('plane-background3.jpg');
+	background-blend-mode: lighten;
 	text-align: center;
 	margin: 0;
 }
@@ -11,11 +16,24 @@ body
 	max-width: 1024px;
 	padding-top: 15px;
 	
-	background-color: #5E7BA8;
+	background-color: rgba(94, 123, 168, 0.8);
+}
+@media screen and (max-width: 1023px)
+{
+	.container
+	{
+		background-color: rgb(94, 123, 168);
+	}
 }
 header
 {
 	margin: 0px 50px 0px 50px;
+	font-size: 18px;
+}
+section
+{
+	margin: 0px 50px 0px 50px;
+	font-size: 16px;
 }
 
 #the-title
@@ -25,6 +43,13 @@ header
 	background-color: #276F65;
 	display: inline-block;
 	width: 100%;
+}
+.title
+{
+	padding: 25px 0px 25px 0px;
+	display: inline-block;
+	width: 100%;
+	background-color: #276F65;
 }
 
 
@@ -52,28 +77,34 @@ p
 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 500;
-	font-size: 18px;
 	color: #14143B;
 	text-align: justify;
 	
 	margin: 22px 30px 22px 30px;
 }
 
-h1, h2, h3
+h1, h2, h3, h4
 {
 	font-family: 'Cinzel Decorative', serif;
 	color: #C5C5AC;
 	margin: 0;
+	font-weight: normal;
 }
 h1
 {
-	font-weight: normal;
 	font-size: 75px;
 }
 h3
 {
-	font-weight: normal;
 	font-size: 35px;
+}
+h2
+{
+	font-size: 35px;
+}
+h4
+{
+	font-size: 25px;
 }
 #problematique
 {
