@@ -100,11 +100,11 @@ h3
 }
 h2
 {
-	font-size: 35px;
+	font-size: 40px;
 }
 h4
 {
-	font-size: 25px;
+	font-size: 22px;
 }
 #problematique
 {
@@ -139,11 +139,15 @@ li
 	font-weight: light;
 	font-family: 'Abel', serif;
 	font-size: 30px;
-	color: #C5C5AC;
 	
 	padding: 5px 20px 5px 20px;
 	
 	display: inline-block;
+}
+a, a:visited
+{
+	color: #C5C5AC;
+	text-decoration: none;
 }
 .divider
 {
