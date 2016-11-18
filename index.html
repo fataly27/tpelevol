@@ -22,7 +22,7 @@
 		</div>
 		<div class="container">
 			<header>
-				<div class="quotation"><q>La réalisation d'une machine volante plus lourde que l'air est impossible</q> <span class="author"> Lord Kelvin, 1895 </span></div>
+				<div class="quotation"><q>La réalisation d'une machine volante plus lourde que l'air est impossible</q> <span class="author">Lord Kelvin, 1895</span></div>
 				<p>
 					Le vol des oiseaux, des insectes, des chauve-souris et autres animaux a inspiré de nombreux inventeurs dès la Renaissance. Toutefois, le vol d’un engin plus lourd que l’air fut considéré comme impossible par beaucoup de scientifiques reconnus jusqu’à la fin du XIXème siècle.
 					Ainsi Léonard de Vinci, passionné par l’idée de voler, a dessiné un des premiers aéronefs s’inspirant du vol des oiseaux. Néanmoins, il n’a jamais conçu cet ornithoptère, à l’instar des nombreux échecs ayant découragé ses pairs jusqu’à l’aube du XXème siècle.
@@ -39,7 +39,12 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#portance">La portance</a></li><li><a href="#">La poussée</a></li><li><a href="#">Le contrôle</a></li><li class="divider"><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li>
+				<li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#">Le contrôle</a></li><li class="divider"><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li>
+			</ul>
+		</nav>
+		<nav id="fixed-mesh">
+			<ul>
+				<li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#">Le contrôle</a></li><li class="divider"><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li>
 			</ul>
 		</nav>
 		<div class="container">
@@ -49,10 +54,68 @@
 			</div>
 			<section>
 				<p>
-					Le vol d’un aéronef plus lourd que l’air est tout d’abord limité par son poids, calculé grâce au produit de la masse de l’objet et de l’intensité de pesanteur locale : P = m*g.
+					Le vol d’un aéronef plus lourd que l’air est tout d’abord limité par son poids, calculé grâce au produit de la masse de l’objet et de l’intensité de pesanteur locale:
+				</p>
+				<div class="formula">P = m × g</div>
+				<p>
 					Ce poids empêche tout objet, engin ou animal, de se maintenir immobile dans l’air. Il est donc nécessaire d’y opposer une autre force: la portance. Le décollage d’un aéronef ou d’un animal
 					correspond alors à la compensation des forces qui le maintiennent au sol. Afin de comprendre comment optimiser notre aéronef pour qu’il puisse décoller et rester en l’air par la suite, il
 					nous est alors possible d’étudier les exemples que nous pouvons voir autour de nous, c’est-à-dire le vol des êtres vivants.
+				</p>
+				<p>
+					En effet, l’aile d’une chauve-souris est une membrane alaire, composée de bandes élastiques disposées selon une seule direction. La membrane est divisée entre le propatagium, situé entre le bras et l’avant bras, le patagium, située entre les longs doigts de la chauve-souris et la ligne latérale du corps et l’uropatagium, qui relie les pattes arrières et la queue. C’est le patagium, la plus grande partie de la membrane, qui assure le rôle du gain de vitesse et de portance. Pour obtenir cette dernière, les chauve-souris utilisent le vol battu. Grâce au mouvement de haut en bas de leurs ailes, ils chassent l’air en bas d’eux, créant une dépression sur le haut de leur corps, et une pression plus grande sur le bas de leur corps. L’air presse donc plus le bas que le haut de la chauve-souris: elle gagne de l’altitude.
+				</p>
+				<p>
+					De plus, l’aile est pourvue de fibres musculaires et nerveuses ainsi que de vaisseaux sanguins. La membrane est donc mobile. Cela permet à la chauve-souris de gagner en vitesse, et de tordre ou de replier la membrane, ce qui diminue l’effet du vol battu lors d’un battement vers le haut qui compenserait le battement vers le bas. Ce mécanisme est toutefois impossible à reproduire pour l’avion ou le planeur, car le coton ou n’importe quel autre matériau ne peut pas se tordre ainsi sans se détériorer très rapidement, et au prix de mécanismes complexes et donc lourds.
+				</p>
+				<div class="part-divider"></div>
+				<p>
+					Il faut alors se rabattre sur l’étude des oiseaux. Ils peuvent en effet orienter individuellement leurs plumes pour laisser passer l’air lors d’un battement vers le haut et n’ont donc pas besoin de tordre leur aile. De plus, ils maîtrisent, avec le vol battu, le vol plané, qui utilise seulement quelques battements d’aile afin de conserver leur vitesse, et utilisent cette dernière pour conserver une portance suffisante. Toutefois, certains oiseaux n’utilisent pas cette technique, qui est apparu après le vol battu, et qui est donc une innovation évolutive que l’on peut identifier. En effet, les oiseaux utilisant majoritairement ce vol ont des ailes avec une forte cambrure, et avec une surface portante maximale et un poids minimal, soit une charge alaire minimale. De plus, leurs ailes forment avec le flux d’air un angle appelé angle d’incidence qui varie en fonction des situations et participe aussi à la portance. Enfin, on observe que ces oiseaux décollent généralement face au vent, après avoir pris un grand élan comme l’albatros qui court longtemps avant de décoller, ou la mouette qui attend un vent fort.
+				</p>
+				<p>
+					Otto Lilienthal, pendant les années 1890, mit donc à profit ses études afin de concevoir de multiples modèles de planeurs le transportant qui reproduisaient exactement le vol plané des oiseaux, et utilisaient la majorité de ses techniques. Néanmoins, les ailes de ces planeurs étaient fixes. Ils perdaient donc de la vitesse progressivement, et avec elle de l’altitude, jusqu’à l’arrêt et l'atterrissage de l’appareil. C’est le modèle de nos planeurs actuels.
+				</p>
+				<p>
+					Il essaya par la suite, le 9 août 1896, le vol d’un biplan afin de doubler la surface alaire de l’appareil et donc d’augmenter la portance. Ce planeur réalise tout d’abord plusieurs vols de 250 mètres, mais l’appareil chute lors du quatrième vol, et tombe de quinze mètres.
+				</p>
+				<div class="quotation"><q>Des sacrifices doivent être faits</q> <span class="author">Otto Lilienthal, 1896</span></div>
+				<p>
+					 Il mourut des suites de ses blessures peu après cette déclaration.
+				</p>
+				<div class="part-divider"></div>
+				<p>
+					L’observation des oiseaux ainsi que des mesures et calculs effectués en soufflerie permettent donc à cette époque de fixer les bases d’un nouveau domaine d'ingénierie: l’aérodynamique.
+				</p>
+				<p>
+					On cherche alors à contrer le poids d’un objet afin de le maintenir en l’air. On détermine alors la portance, car cette force s’oppose au poids. La portance se calcule par rapport à un fluide, ici l’air, en calculant le produit de la moitié de la masse volumique de l’air, de la vitesse par rapport à l’air au carré et de la surface portante, le tout multiplié par le coefficient de la portance: 
+				</p>
+				<div class="formula">Fz = Cz × ½ρ × v² × S</div>
+				<p>
+					Afin que l’objet décolle, il faut donc avoir une grande surface portante, et voler à des altitudes d’abord peu élevées, où la masse volumique de l’air est importante. De plus, il est nécessaire d’augmenter la vitesse de la surface portante par rapport à l’air, ainsi que le coefficient de portance, qui varie en fonction du profil de l’aile car il dépend de la courbure de l’aile et de son angle d’incidence. Cet angle d’incidence est l’angle entre la corde de la surface portante et la direction du flux d’air traversé.
+				</p>
+				<p>
+					On remarque que ce coefficient de portance peut être optimisé, lorsque l’angle d’incidence atteint une valeur précise (ici 16°). De plus, au delà d’un certain angle (25°), l’incidence est trop grande, l’air se décolle de l’extrados, la partie supérieure de l’aile, la portance devient nulle : c’est le décrochage. En dessous d’un autre angle (-5°), la surface alaire ne permet plus de portance positive : l’appareil perd de l’altitude.
+					<br/>En effet, un angle d’incidence positif permet, lorsque la surface portante avance par rapport à l’air, de créer un surplus de pression sur la partie inférieure de l’aile, la poussant ainsi vers le haut et augmentant donc la portance.
+				</p>
+				<p>
+					Le mécanisme de la cambrure de l’aile est plus complexe, et se base sur l’augmentation de la distance à parcourir de l’air sur la partie supérieure de l’aile, par rapport à sa partie inférieure. Pendant un premier état transitoire, le flux d’air supérieur garde la même vitesse que le flux d’air inférieur, mais a une plus grande distance à parcourir, ce qui crée une dépression sur la partie l’arrière de l’aile, provoquant l’accélération du flux d’air, ce qui conduit à l’uniformisation du flux d’air, qui gardera une vitesse plus importante. 
+				</p>
+				<p>
+					D’après le théorème de Bernoulli, la vitesse d’un fluide au carré divisé par deux plus le produit de l’accélération de pesanteur et de l’altitude plus la pression du fluide divisé par sa masse volumique est constante:
+				</p>
+				<div class="formula">v²/2 + g × z + p/ρ = constante</div>
+				<p>
+					Or, pour un moment et un point donné du vol, l’altitude, l’accélération de pesanteur ainsi que la masse volumique de l’air étant constantes, le théorème de Bernoulli nous permet de dire que si la vitesse du flux d’air augmente, la pression qu’il exerce, ici sur la partie supérieure de l’aile, diminue. On assiste alors à un écart de pression sur le bas et le haut de l’aile, la pression sur la surface inférieure étant supérieure à la pression sur la surface inférieure: l’objet monte.
+					<br/>Le profil de l’aile crée donc une portance qui permettent à l’avion comme à l’oiseau de se maintenir en l’air, mais l’aile provoque aussi des frottements ralentissant l’objet.
+				</p>
+			</section>
+			<div class="title" id="poussee">
+				<h4>Les principes fondamentaux du vol</h4>
+				<h2>La poussée</h2>
+			</div>
+			<section>
+				<p>
+					Une des données les plus importantes du vol d’un avion est sa vitesse. Elle lui permet tout d’abord de se déplacer, mais est aussi nécessaire à la portance. Otto Lilienthal, pour cela, prenait son élan avant de planer face au vent, comme de nombreux oiseaux.
 				</p>
 			</section>
 		</div>

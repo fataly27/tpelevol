@@ -33,7 +33,7 @@ header
 section
 {
 	margin: 0px 50px 0px 50px;
-	font-size: 16px;
+	font-size: 17px;
 }
 
 #the-title
@@ -72,6 +72,18 @@ q
 	float: right;
 	margin-top: 5px;
 }
+.formula
+{
+	font-family: 'Oswald', Arial, serif;
+	font-size: 35px;
+	padding: 10px 0px 10px 0px;
+	vertical-align: middle;
+}
+.part-divider
+{
+	border-bottom: #276F65 2px solid;
+	margin: 20px 0px 20px 0px;
+}
 
 p
 {
@@ -80,7 +92,8 @@ p
 	color: #14143B;
 	text-align: justify;
 	
-	margin: 22px 30px 22px 30px;
+	padding: 15px 30px 15px 30px;
+	margin: 0;
 }
 
 h1, h2, h3, h4
@@ -124,7 +137,8 @@ h4
 
 nav
 {
-	background-color: #114A7B
+	background-color: #114A7B;
+	width: 100%;
 }
 ul
 {
@@ -149,9 +163,21 @@ a, a:visited
 	color: #C5C5AC;
 	text-decoration: none;
 }
+a.anchor
+{
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
 .divider
 {
 	border-left: 2px solid #C5C5AC;
 	padding-left: 40px;
 	margin-left: 20px;
+}
+#fixed-mesh
+{
+	position: fixed;
+	top: 0px;
 }
