@@ -2,7 +2,7 @@ body
 {
 	background-size: 100% auto;
 	background-attachment: fixed;
-    background-position: center;
+	background-position: center;
 	background-color: rgba(155, 172, 200, 0.7);
 	background-image: url('plane-background3.jpg');
 	background-blend-mode: lighten;
@@ -50,6 +50,11 @@ section
 	display: inline-block;
 	width: 100%;
 	background-color: #276F65;
+}
+.anchor
+{
+	visibility: hidden;
+	height: 0;
 }
 
 
@@ -176,8 +181,9 @@ a.anchor
 	padding-left: 40px;
 	margin-left: 20px;
 }
-#fixed-mesh
+#fixed-nav
 {
 	position: fixed;
 	top: 0px;
+	display: none;
 }
