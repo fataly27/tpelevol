@@ -18,8 +18,6 @@ $(function() {
 	});
 	
 	$(window).scroll(showOrHide);
-	
-	showOrHide();
 });
 
 function showOrHide()
