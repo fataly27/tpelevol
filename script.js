@@ -18,6 +18,7 @@ $(function() {
 	});
 	
 	$(window).scroll(showOrHide);
+	$(window).resize(showOrHide);
 	
 	showOrHide();
 });
