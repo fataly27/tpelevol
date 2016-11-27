@@ -121,6 +121,7 @@ h4
 {
 	width: 100%;
 	background-color: #224E92;
+	margin: 10px 0px 10px 0px;
 }
 #problematique p
 {
@@ -244,3 +245,19 @@ a, a:visited
 	top: 0px;
 	display: none;
 }
+
+
+.left-handed, .right-handed
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px 15px 15px 15px;
+}
+.text
+{ width: 49%; }
+.image
+{ width: 40%; }
+.image img
+{ width: 100%; }
+.image p
+{ padding: 0; }
