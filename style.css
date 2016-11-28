@@ -261,8 +261,3 @@ a, a:visited
 { width: 100%; }
 .image p
 { padding: 0; }
-
-.transparent
-{
-	opacity: 0.7;
-}
