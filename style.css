@@ -79,6 +79,15 @@ q
 	font-family: 'Abel', serif;
 	font-size: 27px;
 }
+.image-title
+{
+	display: inline-block;
+	font-family: 'Abel', serif;
+	font-size: 15px;
+	color: #444466;
+	padding: 0;
+	text-align: center;
+}
 
 p
 {
