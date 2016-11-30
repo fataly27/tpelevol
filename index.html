@@ -43,12 +43,12 @@
 		</div>
 		<nav id="static-nav">
 			<ul>
-				<div id="first-part"><li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#">Le contrôle</a></li></div><div id="second-part"><li><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li></div>
+				<div id="first-part"><li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#controle">Le contrôle</a></li></div><div id="second-part"><li><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li></div>
 			</ul>
 		</nav>
 		<nav id="fixed-nav">
 			<ul>
-				<div id="first-part"><li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#">Le contrôle</a></li></div><div id="second-part"><li><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li></div>
+				<div id="first-part"><li><a href="#portance">La portance</a></li><li><a href="#poussee">La poussée</a></li><li><a href="#controle">Le contrôle</a></li></div><div id="second-part"><li><a href="#">Les types d’ailes</a></li><li><a href="#">La réduction des forces indésirables</a></li></div>
 			</ul>
 		</nav>
 		<div class="container">
@@ -59,7 +59,7 @@
 			<section>
 				<div class="subsection">Quelle contrainte ?</div>
 				<p>
-					Le vol d’un aéronef plus lourd que l’air est tout d’abord limité par son poids, calculé grâce au produit de la masse de l’objet et de l’intensité de pesanteur locale:
+					Le vol d’un aéronef plus lourd que l’air est tout d’abord limité par son poids, calculé grâce au produit de la masse de l’objet (m) et de l’intensité de pesanteur locale (g):
 				</p>
 				<div class="formula left-handed text">P = m × g</div>
 				<div class="right-handed image"><img src="images/part1/poids.png" alt="Le poids"/><p class="image-title">Représentation simplifiée du poids</p></div>
@@ -97,7 +97,7 @@
 					L’observation des oiseaux ainsi que des mesures et calculs effectués en soufflerie permettent donc à cette époque de fixer les bases d’un nouveau domaine d'ingénierie: l’aérodynamique.
 				</p>
 				<p>
-					On cherche alors à contrer le poids d’un objet afin de le maintenir en l’air. On détermine alors la portance, car cette force s’oppose au poids. La portance se calcule par rapport à un fluide, ici l’air, en calculant le produit de la moitié de la masse volumique de l’air, de la vitesse par rapport à l’air au carré et de la surface portante, le tout multiplié par le coefficient de la portance: 
+					On cherche alors à contrer le poids d’un objet afin de le maintenir en l’air. On détermine alors la portance, car cette force s’oppose au poids. La portance se calcule par rapport à un fluide, ici l’air, en calculant le produit de la moitié de la masse volumique de l’air (ρ), de la vitesse par rapport à l’air (v) au carré et de la surface portante (S), le tout multiplié par le coefficient de la portance (Cz): 
 				</p>
 				<div class="formula left-handed text">Fz = Cz × ½ρ × v² × S</div>
 				<div class="right-handed image"><img src="images/part1/portance.png" alt="Le poids et la portance"/><p class="image-title">Représentation simplifiée du poids et de la portance</p></div>
@@ -118,7 +118,7 @@
 				</p>
 				<div class="right-handed image"><img src="images/part1/bernouilli.gif" alt="Flux d'air"/><p class="image-title">Comportement simplifié de l'air autour de l'aile d'un avion</p></div>
 				<p>
-					D’après le théorème de Bernoulli, la vitesse d’un fluide au carré divisé par deux plus le produit de l’accélération de pesanteur et de l’altitude plus la pression du fluide divisé par sa masse volumique est constante:
+					D’après le théorème de Bernoulli, la vitesse d’un fluide (v) au carré divisé par deux plus le produit de l’accélération de pesanteur (g) et de l’altitude (z) plus la pression du fluide (p) divisé par sa masse volumique (ρ) est constante:
 				</p>
 				<div class="formula">v²/2 + g × z + p/ρ = constante</div>
 				<p>
@@ -129,14 +129,98 @@
 					Le profil de l’aile crée donc une portance qui permettent à l’avion comme à l’oiseau de se maintenir en l’air, mais l’aile provoque aussi des frottements ralentissant l’objet.
 				</p>
 			</section>
+			
+			
+			
 			<div class="title" id="poussee">
 				<h4>Les principes fondamentaux du vol</h4>
 				<h2>La poussée</h2>
 			</div>
 			<section>
+				<div class="subsection">Quels problèmes reste-t-il ?</div>
 				<p>
 					Une des données les plus importantes du vol d’un avion est sa vitesse. Elle lui permet tout d’abord de se déplacer, mais est aussi nécessaire à la portance. Otto Lilienthal, pour cela, prenait son élan avant de planer face au vent, comme de nombreux oiseaux.
+					<br/>Toutefois, cette vitesse crée des frottements sur la surface de l’avion qui le freinent: c’est la traînée, dont la formule est semblable à celle de la portance:
 				</p>
+				<div class="formula left-handed text">Fx = Cx × ½ρ × v2 × S</div>
+				<div class="right-handed image"><img src="images/part2/trainee-poussee.png" alt="Les quatres forces"/><p class="image-title">Représentation simplifiée du poids, de la portance, de la traînée et de la poussée</p></div>
+				<p>
+					Seul le coefficient de traînée (Cx) diffère. Ce coefficient dépend du profil de l’avion ainsi que de l’angle d’incidence. Cette trainée ralentit le planneur d’Otto Lilienthal, qui finit par atterrir. Pour empêcher cela, il est alors nécessaire d’opposer une poussée à la traînée. Cette poussée est l’ensemble des forces faisant avancer l’objet par rapport à l’air.
+				</p>
+				<div class="subsection">Retour aux oiseaux ?</div>
+				<p class="left-handed text">
+					On peut alors, encore une fois, tenter de s’inspirer du vol des oiseaux afin de générer cette force. En effet, les battements des ailes des oiseaux leur permettent d’assurer la portance comme la poussée grâce à différents types de plumes. Parmi elles, les rémiges primaires, longues et étroites, fixées sur les phalanges, peuvent être individuellement orientées grâce à plusieurs muscles et assurent la poussée, tandis que les rémiges secondaires, plus petites et plus souples, assurent la portance. 
+				</p>
+				<div class="right-handed image"><img src="images/part2/remiges.png" alt="Les différents types de rémiges"/><p class="image-title">Schéma des différents types de rémiges</p></div>
+				<p>
+					Dans un premier temps, les oiseaux descendent l'intégralité de l’aile grâce au muscle pectoral, avant d’y ajouter une action de pivot de l’aile, appelé coup de rame, qui crée un mouvement de l’avant vers l’arrière. Le tout produit une surpression en bas et à l’arrière de l’aile, et une sous-pression en haut et à l’avant de l’aile.
+				</p>
+				<div class="left-handed image"><img src="images/part2/muscles.png" alt="Les muscles de l'aile"/><p class="image-title">Schéma des muscles de l'aile d'un oiseau</p></div>
+				<div class="right-handed image"><img src="images/part2/carpe.png" alt="Le carpe"/><p class="image-title">Photo du carpe d'un oiseau</p></div>
+				<p>
+					Une fois ce mouvement terminé, l’oiseau remonte son aile dans sa position initiale grâce au muscle supra-coracoïdien. Afin que ce mouvement provoque une traînée minimale et donc ait le moins d’impact possible sur sa vitesse et sa portance, il effectue une légère flexion au niveau du carpe, à l’aide de muscles fléchisseurs, et replace ses plumes dans le sens du flux d’air, grâce à ses muscles et à la souplesse de ses plumes.
+				</p>
+				<p>
+					De Léonard de Vinci à Otto Lilienthal, l’Homme a alors tenté de concevoir de nombreux ornithoptères qui reproduisent le vol battu des oiseaux. Cependant, certains détails non négligeables n’ont pas pu être pris en compte par les ingénieurs : les toiles utilisées ne pouvaient que grossièrement imiter les plumes de l’oiseau. De plus, les différentes articulations ne suffisaient pas à recréer la complexité de son squelette. Les moyens techniques permettant de reproduire le fonctionnement d’un muscle étaient inefficaces, et les muscles humains eux-mêmes ne sont pas capables de déplacer l’étendue d’une aile, ne serait-ce que pour quelques battements. Ainsi, tous les prototypes d’ornithoptères ont abouti à des échecs. Il fallut alors se tourner vers une autre solution afin de produire une poussée suffisante au décollage des aéronefs.
+				</p>
+				<div class="subsection">Les insectes pourraient-ils nous aider ?</div>
+				<p>
+					En observant cette fois les insectes, on peut voir une nouvelle façon de gagner de la portance et de la poussée qui pourrait être utilisé sur un aéronef. En effet, ces insectes possèdent des ailes bien trop petites par rapport à leurs poids. Ils ne sont donc pas capables de voler à la manière des oiseaux.
+				</p>
+				<div class="left-handed image30"><img src="images/part2/nervures.png" alt="Les nervures de l'aile"/><p class="image-title">Schéma des nervures de l'aile d'un insecte</p></div>
+				<p class="right-handed text60">
+					L’aile d’un insecte est un organe qui peut s’apparenter à une membrane. Elle n’est pas articulée, mais est toutefois mobile grâce à l’action des muscles du thorax. Elle est composée de deux couches circulaires assemblées par des nervures, le reste étant comblé par des cellules. Ces nervures sont des structures creuses. Les plus grosses peuvent contenir des nerfs, des trachées, et de l'hémolymphe, mais les plus petites sont principalement formées de chitine, un glucide rigidifiant ces nervures, qui peuvent donc être plus ou moins souples en fonction de leur nombre et de leur taille. Cette souplesse permet aux ailes de conserver une forme courbée qui se rapproche des ailes des oiseaux en vol plané, et qui permet ici une faible portance.
+				</p>
+				<p>
+					Toutefois, les insectes pratiquent surtout un vol battu très simple, qui leur fournit toutefois portance et poussée grâce au très grand angle d’incidence des ailes, qui crée cependant un continuel décrochage. De plus, la très petite surface des ailes diminue, avec la traînée, la portance. Ces deux problèmes sont compensés par une très grande fréquence de battement et, généralement, par deux paires d’ailes, ce qui double la portance, à moins que la seconde paire soit remplacée par des balanciers, chez les diptères comme le moustique ou la mouche, ou par des élytres qui protègent les ailes chez les coléoptères comme le scarabée.
+				</p>
+				<div class="left-handed image30"><img src="images/part2/libellule.png" alt="Libellule"/><p class="image-title">Photo d'une libellule, ayant 4 ailes</p></div>
+				<div class="left-handed image30"><img src="images/part2/diptere.png" alt="Mouche"/><p class="image-title">Photo d'une mouche, ayant des balaciers</p></div>
+				<div class="right-handed image30"><img src="images/part2/coleoptere.png" alt="Scarabée"/><p class="image-title">Photo d'un scarabée, ayant des élytres</p></div>
+				<p>
+					Chez ces espèces, ce manque de portance est encore équilibré par une plus grande vitesse de battement, rendue possible par des muscles de vol asynchrone, permettant d’actionner plusieurs fois les muscles pour une seule impulsion nerveuse.
+				</p>
+				<div class="important">La mouche atteint ainsi jusqu’à 22 battements par seconde</div>
+				<p>
+					Mais surtout, les insectes changent l’axe de leurs ailes à chaque battement vers le haut ou vers le bas, afin d’utiliser le vortex créé par le bord d’attaque de l’aile lors du battement précédent, ou lors du battement de l’aile antérieure. Cela crée finalement plus de portance et de poussée et permet enfin à l’insecte de voler.
+				</p>
+				<img src="images/part2/vol-insecte.png" alt="Technique de vol des insectes"/><br/><p class="image-title">Technique de vol des insectes</p>
+				<p>
+					Même si ce mécanisme n’est pas directement reproduisible par les machines à cause du trop gros nombre de battements, il peut être rapproché au fonctionnement de l’hélice du XXème siècle à nos jours. Pour la première fois, l’inventivité de l’homme entre en jeu, et réutilise les principes du vol des êtres vivants afin de concevoir une innovation plus adaptée au vol de la machine: l’hélice.
+				</p>
+				<div class="subsection">En quoi l'hélice se rapproche-t-elle des insectes ?</div>
+				<p>
+					Le but d’une hélice est de créer une poussée vers l’avant. Son principe repose sur la rotation de plusieurs ailes d’avion qui auraient pivoté de 90°. En effet, le profil d’une des pales d’une hélice est très proche d’un profil d’aile standard. Cette fois, la vitesse par rapport à l’air n’est pas fournie par un déplacement de la surface portante dans une direction donnée, mais par la rotation autour d’un axe : c’est le couple moteur. Le pas d’une hélice est la distance que cette dernière parcourt dans la direction de l’axe de rotation en un tour. Cependant, on discerne le pas effectif du pas géométrique. Le pas effectif étant la distance réellement parcourue, alors que le pas géométrique correspond à un simple résultat de calcul. Cette différence est visible lorsque l’avion est à l'arrêt, avec un couple moteur bien réel. L’hélice contient 2 à 8 pales. Plus le nombre de pale est important, plus la poussée sera grande, mais plus il faudra fournir de puissance moteur. 
+				</p>
+				<div class="left-handed image"><img src="images/part2/trois-pales.png" alt="Hélice à 3 pales"/><p class="image-title">Photo d'un avion ayant 3 pales</p></div>
+				<div class="right-handed image"><img src="images/part2/huit-pales.png" alt="Hélice à 8 pales"/><p class="image-title">Photo d'un avion ayant 8 pales</p></div>
+				<p>
+					L’hélice est donc comparable à une aile d’insecte, inarticulée et avec une petite surface, qui augmente son nombre de rotations par seconde et son nombre de pales pour bénéficier d’une plus grande poussée.
+				</p>
+				<p>
+					On appelle angle de calage l’angle entre la corde de la pale et le plan de rotation de l’hélice. On peut ensuite revenir au principe de l’aile standard.  Pour un point de la pale, l’angle d’incidence est alors relatif au mouvement de ce point par rapport à l’air, tout au long d’un tour. Ce mouvement est égal à la somme de la vitesse de l’avion et de la vitesse tangentielle du point étudié, qui vaut le périmètre du cercle dessiné par le point étudié fois la vitesse de rotation de l’hélice en tours par seconde. La différence entre l’angle de calage et l’angle d’avancement de ce point lors de ce mouvement correspond finalement à l’angle d’incidence à ce point de la pale.
+				</p>
+				<p class="left-handed text">
+					Afin d’optimiser une pale, il faut que son efficacité soit maximale sur toute sa longueur. Or, l’angle d’incidence augmente lorsque la vitesse de rotation augmente. Afin de garder un angle d’incidence constant et proche de l’efficacité maximale, il est donc nécessaire de diminuer l’angle de calage lorsque l’on s’éloigne du centre de l’hélice.
+				</p>
+				<div class="right-handed image"><img src="images/part2/helice-calage.png" alt="Hélice"/><p class="image-title">L'angle de calage d'une hélice varie en fonction de la distance au centre</p></div>
+				<p>
+					En revenant donc à une aile standard, on peut affirmer que la pale crée une portance qui peut être décomposé en deux forces, représentées par deux vecteurs perpendiculaires, la direction de la première étant l’axe de rotation de l’hélice. La seconde force crée alors un couple résistant. Si l’angle d’incidence des pales est positif, la portance sera positive, et l’avion accélèrera alors, tandis qu’il faudra augmenter le couple moteur pour équilibrer le couple résistant qui ralentirait l’hélice: c’est le fonctionnement propulseur. Dans le cas inverse, l’avion décélèrerait, mais l’hélice serait entraîné par le couple résistant: c’est le fonctionnement moulinet, qui permet de démarrer des moteurs en vol.
+				</p>
+				<p>
+					Lorsque la vitesse de l’avion augmente, si la vitesse de rotation de l’hélice reste la même,  l’angle d’avancement augmente, jusqu’à dépasser la corde de la pale. L’incidence est négative, et l’hélice porte extrêmement peu, voire pas du tout. Dans ce cas, seules les forces de frottement sont présentes. Afin d’éviter cela, on doit augmenter à nouveau l’angle d’incidence des pales. On peut alors soit diminuer l’angle d’avancement en augmentant la vitesse de rotation de l’hélice, soit augmenter l’angle de calage. Ainsi, plus un avion est destiné à voler vite, plus d’angle de calage est grand, étant donné que la puissance des moteurs et la solidité de certaines pièces ne sont pas infinies. 
+				</p>
+				<p>
+					Cette nouvelle innovation fut utilisée avec succès par les frères Wright en 1905, fournissant suffisamment de poussée pour assurer durablement la portance et le déplacement d’un avion. Ils furent ainsi les premiers à réaliser des vols stables et contrôlés.
+				</p>
+			</section>
+			
+			
+			<div class="title" id="controle">
+				<h4>Les principes fondamentaux du vol</h4>
+				<h2>Le contrôle</h2>
+			</div>
+			<section>
 			</section>
 		</div>
 		<!--<footer>

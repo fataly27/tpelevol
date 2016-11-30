@@ -49,6 +49,12 @@ section
 	margin: 25px 0px 60px 0px;
 	font-family: 'Oswald', Arial, serif;
 }
+.important
+{
+	font-family: 'Oswald', Arial, serif;
+	font-size: 30px;
+	padding: 10px 0px 10px 0px;
+}
 q
 {
 	display: block;
@@ -66,7 +72,6 @@ q
 	font-family: 'Oswald', Arial, serif;
 	font-size: 35px;
 	padding: 10px 0px 10px 0px;
-	vertical-align: middle;
 }
 .subsection
 {
@@ -266,7 +271,11 @@ a, a:visited
 { width: 49%; }
 .image
 { width: 40%; }
-.image img
+.image img, .image30 img
 { width: 100%; }
-.image p
+.image p, .image30 p
 { padding: 0; }
+.image30
+{ width: 28% }
+.text60
+{ width: 60% }

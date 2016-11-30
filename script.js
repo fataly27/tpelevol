@@ -11,7 +11,7 @@ $(function() {
 				{
 					scrollTop: target.offset().top - $('#fixed-nav').outerHeight(true)
 					
-				}, 700);
+				}, 1500);
 				return false;
 			}
 		}
