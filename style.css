@@ -4,7 +4,7 @@ body
 	background-attachment: fixed;
 	background-position: center;
 	background-color: rgb(155, 172, 200);
-	background-image: url('plane-background3.jpg');
+	background-image: url('plane-background.jpg');
 	background-blend-mode: lighten;
 	
 	text-align: center;
@@ -28,6 +28,16 @@ section
 {
 	margin: 0px 50px 0px 50px;
 	font-size: 17px;
+}
+#conclusion
+{
+	font-size: 18px;
+}
+footer
+{
+	padding: 20px 0px 15px 0px;
+	background-color: #276F65;
+	margin-top: 20px;
 }
 
 #the-title
@@ -108,7 +118,7 @@ p
 	font-weight: bold;
 }
 
-h1, h2, h3, h4
+h1, h2, h3, h4, h5
 {
 	font-family: 'Cinzel Decorative', serif;
 	color: #C5C5AC;
@@ -131,6 +141,10 @@ h4
 {
 	font-size: 22px;
 }
+h5
+{
+	font-size: 15px;
+}
 #problematique
 {
 	width: 100%;
@@ -151,6 +165,7 @@ nav
 	background-color: #114A7B;
 	width: 100%;
 	text-align: center;
+	z-index: 1;
 }
 ul
 {
@@ -161,7 +176,6 @@ ul
 }
 li
 {
-	font-weight: light;
 	font-family: 'Abel', serif;
 	font-size: 30px;
 	
@@ -279,3 +293,52 @@ a, a:visited
 { width: 28% }
 .text60
 { width: 60% }
+
+video
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+section video
+{
+	width: 80%;
+	margin-bottom: 0px;
+}
+footer div
+{
+	vertical-align: top;
+}
+#sources, #divers
+{
+	display: block;
+}
+#images
+{
+	display: inline-block;
+	width: 55%;
+}
+#images li
+{
+	text-align: left;
+}
+#autres
+{
+	display: inline-block;
+	width: 44%;
+}
+#autres li
+{
+	text-align: right;
+}
+footer li
+{
+	color: #C5C5AC;
+	font-size: 12px;
+	display: block;
+	word-wrap: break-word;
+	margin: 10px 20px 10px 20px;
+}
+.centered
+{
+	max-width: 90%;
+}
