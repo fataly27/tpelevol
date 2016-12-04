@@ -48,3 +48,9 @@ $("video").click(function()
 	else
 		this.pause();
 });
+$('video').on('ended', function()
+{
+	var v = this.currentSrc;
+    this.src='';
+    this.src = v;
+});
