@@ -43,7 +43,7 @@ $("video").hover(function()
 
 $("video").click(function()
 {
-	if( this.paused)
+	if(this.paused)
 		this.play();
 	else
 		this.pause();
@@ -53,4 +53,14 @@ $('video').on('ended', function()
 	var v = this.currentSrc;
     this.src='';
     this.src = v;
+});
+$('video').on('play', function()
+{
+	var videos = $('video');
+	for (var i = 0; i < videos.length; i++)
+	{
+		if(videos.get(i) != this)
+			videos.get(i).pause();
+	}
+	this.play();
 });
