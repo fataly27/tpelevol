@@ -1,6 +1,7 @@
 body
 {
 	background-size: 100% auto;
+    background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-color: rgb(155, 172, 200);
@@ -9,6 +10,13 @@ body
 	
 	text-align: center;
 	margin: 0;
+}
+@media screen and (max-width: 1024px)
+{
+	body
+	{
+		background-size: auto 100%;
+	}
 }
 .container
 {
@@ -343,4 +351,9 @@ footer li
 .italique
 {
 	font-style: italic;
+}
+.centered-image img
+{
+	display: inline-block;
+	max-width: 100%;
 }
